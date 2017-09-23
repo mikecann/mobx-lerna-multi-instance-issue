@@ -2,7 +2,7 @@ import * as React from 'react';
 import './App.css';
 import { observer } from "mobx-react";
 import { observable, action } from "mobx";
-import { MySharedComponent } from "markd-shared";
+import { MySharedComponent } from "my-shared";
 
 const logo = require('./logo.svg');
 
@@ -19,12 +19,12 @@ class App extends React.Component {
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-          <div>
-            <button onClick={this.handleClick}>Click Me ({this.count})</button>
-          </div>
-          <MySharedComponent count={this.count} />
+          To get started, edit <code>src/App.tsx</code> and save to reload.        
         </p>
+        <div>
+          <button onClick={this.handleClick}>Click Me ({this.count})</button>
+        </div>
+        <MySharedComponent count={this.count} />
       </div>
     );
   }
