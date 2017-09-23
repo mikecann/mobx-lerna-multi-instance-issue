@@ -1,0 +1,11 @@
+{
+	"private": true,
+	"scripts": {
+		"postinstall": "lerna bootstrap",
+		"clean": "lerna clean --yes",
+		"start": "lerna run start --parallel --stream --ignore markd-server"
+	},
+	"devDependencies": {
+		"lerna": "^2.2.0"
+	}
+}
